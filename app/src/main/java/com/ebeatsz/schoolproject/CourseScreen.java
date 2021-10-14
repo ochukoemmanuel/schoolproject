@@ -5,6 +5,8 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -24,6 +26,9 @@ public class CourseScreen extends AppCompatActivity {
     ArrayList<Course> courseList = new ArrayList<Course>();
 //    ArrayList<Screen> screenCast = new ArrayList<Screen>();
 
+    private TextView titleName;
+    private View backView;
+
     private RecyclerView recyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
@@ -34,6 +39,18 @@ public class CourseScreen extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         setContentView(R.layout.activity_course_screen);
+        titleName = findViewById(R.id.titleName);
+        backView = findViewById(R.id.backView);
+
+        String getDepartment = getIntent().getStringExtra("department");
+        titleName.setText(getDepartment);
+
+        backView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         // ToolBar
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_main);
