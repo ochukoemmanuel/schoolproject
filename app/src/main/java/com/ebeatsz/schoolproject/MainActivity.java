@@ -43,20 +43,20 @@ public class MainActivity extends AppCompatActivity {
 
         // Category 4
         categoryItemList4 = new ArrayList<CategoryItem>();
-        categoryItemList4.add(new CategoryItem(3, R.drawable.sch_man, "Accountancy"));
-        categoryItemList4.add(new CategoryItem(4, R.drawable.sch_man, "Business Administration"));
+        categoryItemList4.add(new CategoryItem(3, R.drawable.a, "Accountancy"));
+        categoryItemList4.add(new CategoryItem(4, R.drawable.ba, "Business Administration"));
 
         // Category 1
         categoryItemList = new ArrayList<CategoryItem>();
-        categoryItemList.add(new CategoryItem(0, R.drawable.sch_tech, "Computer Engineering"));
-        categoryItemList.add(new CategoryItem(1, R.drawable.sch_tech, "Civil Engineering"));
-        categoryItemList.add(new CategoryItem(2, R.drawable.sch_tech, "Electrical Electronics Engineering"));
+        categoryItemList.add(new CategoryItem(0, R.drawable.ce, "Computer Engineering"));
+        categoryItemList.add(new CategoryItem(1, R.drawable.civile, "Civil Engineering"));
+        categoryItemList.add(new CategoryItem(2, R.drawable.eee, "Electrical Electronics Engineering"));
 
         // Category 2
         categoryItemList2 = new ArrayList<CategoryItem>();
-        categoryItemList2.add(new CategoryItem(1, R.drawable.sch_env, "Architectural Technology"));
-        categoryItemList2.add(new CategoryItem(2, R.drawable.sch_env, "Estate Management"));
-        categoryItemList2.add(new CategoryItem(3, R.drawable.sch_env, "Quantity Surveying"));
+        categoryItemList2.add(new CategoryItem(1, R.drawable.at, "Architectural Technology"));
+        categoryItemList2.add(new CategoryItem(2, R.drawable.em, "Estate Management"));
+        categoryItemList2.add(new CategoryItem(3, R.drawable.qs, "Quantity Surveying"));
 
 
         allCategoryList = new ArrayList<AllCategory>();
