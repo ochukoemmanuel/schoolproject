@@ -53,26 +53,28 @@ public class CourseScreen extends AppCompatActivity {
     private void fillCourse() {
         String getDepartment = getIntent().getStringExtra("department");
 
-        if (getDepartment.equals("Computer Engineering")) {
-            courseList.add(new Course("INTRODUCTION TO Engineering", "Computer Engineering"));
-        } else if (getDepartment.equals("Civil Engineering")) {
-            courseList.add(new Course("INTRODUCTION TO Civil Engineering", "Civil Engineering"));
-        } else if (getDepartment.equals("Electrical Electronics Engineering")) {
-            courseList.add(new Course("INTRODUCTION TO Electrical Electronics Engineering", "Electrical Electronics Engineering"));
-        } else if (getDepartment.equals("Architectural Technology")) {
-            courseList.add(new Course("INTRODUCTION TO Architectural Technology", "Architectural Technology"));
-        } else if (getDepartment.equals("Quantity Surveying")) {
-            courseList.add(new Course("INTRODUCTION TO Quantity Surveying", "Quantity Surveying"));
-        } else if (getDepartment.equals("Estate Management")) {
-            courseList.add(new Course("INTRODUCTION TO Estate Management", "Estate Management"));
-        } else if (getDepartment.equals("Computer Science")) {
-            courseList.add(new Course("INTRODUCTION TO Computer Science", "Computer Science"));
-        } else if (getDepartment.equals("Science Laboratory Technology")) {
-            courseList.add(new Course("INTRODUCTION TO Science Laboratory Technology", "Science Laboratory Technology"));
-        } else if (getDepartment.equals("Accountancy")) {
-            courseList.add(new Course("INTRODUCTION TO Accountancy", "Accountancy"));
-        } else if (getDepartment.equals("Business Administration")) {
-            courseList.add(new Course("Business Administration", "Business Administration"));
+        for (int i = 0; i < 15; i++){
+            if (getDepartment.equals("Computer Engineering")) {
+                courseList.add(new Course("INTRODUCTION TO Engineering", "Computer Engineering"));
+            } else if (getDepartment.equals("Civil Engineering")) {
+                courseList.add(new Course("INTRODUCTION TO Civil Engineering", "Civil Engineering"));
+            } else if (getDepartment.equals("Electrical Electronics Engineering")) {
+                courseList.add(new Course("INTRODUCTION TO Electrical Electronics Engineering", "Electrical Electronics Engineering"));
+            } else if (getDepartment.equals("Architectural Technology")) {
+                courseList.add(new Course("INTRODUCTION TO Architectural Technology", "Architectural Technology"));
+            } else if (getDepartment.equals("Quantity Surveying")) {
+                courseList.add(new Course("INTRODUCTION TO Quantity Surveying", "Quantity Surveying"));
+            } else if (getDepartment.equals("Estate Management")) {
+                courseList.add(new Course("INTRODUCTION TO Estate Management", "Estate Management"));
+            } else if (getDepartment.equals("Computer Science")) {
+                courseList.add(new Course("INTRODUCTION TO Computer Science", "Computer Science"));
+            } else if (getDepartment.equals("Science Laboratory Technology")) {
+                courseList.add(new Course("INTRODUCTION TO Science Laboratory Technology", "Science Laboratory Technology"));
+            } else if (getDepartment.equals("Accountancy")) {
+                courseList.add(new Course("INTRODUCTION TO Accountancy", "Accountancy"));
+            } else if (getDepartment.equals("Business Administration")) {
+                courseList.add(new Course("Business Administration", "Business Administration"));
+            }
         }
     }
 
