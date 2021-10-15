@@ -70,25 +70,25 @@ public class CourseScreen extends AppCompatActivity {
 
         for (int i = 0; i < 15; i++){
             if (getDepartment.equals("Computer Engineering")) {
-                courseList.add(new Course("INTRODUCTION TO Engineering", "Computer Engineering"));
+                courseList.add(new Course("INTRODUCTION TO Engineering", "Computer Engineering", "School of Science & Technology", "First Semester Examination 2020/2021 Session (FT)", "", "", "", "", "", "", "", ""));
             } else if (getDepartment.equals("Civil Engineering")) {
-                courseList.add(new Course("INTRODUCTION TO Civil Engineering", "Civil Engineering"));
+                courseList.add(new Course("INTRODUCTION TO Civil Engineering", "Civil Engineering",  "", "First Semester Examination 2020/2021 Session (FT)", "", "", "", "", "", "", "", ""));
             } else if (getDepartment.equals("Electrical Electronics Engineering")) {
-                courseList.add(new Course("INTRODUCTION TO Electrical Electronics Engineering", "Electrical Electronics Engineering"));
+                courseList.add(new Course("INTRODUCTION TO Electrical Electronics Engineering", "Electrical Electronics Engineering",  "", "First Semester Examination 2020/2021 Session (FT)", "", "", "", "", "", "", "", ""));
             } else if (getDepartment.equals("Architectural Technology")) {
-                courseList.add(new Course("INTRODUCTION TO Architectural Technology", "Architectural Technology"));
+                courseList.add(new Course("INTRODUCTION TO Architectural Technology", "Architectural Technology",  "", "First Semester Examination 2020/2021 Session (FT)", "", "", "", "", "", "", "", ""));
             } else if (getDepartment.equals("Quantity Surveying")) {
-                courseList.add(new Course("INTRODUCTION TO Quantity Surveying", "Quantity Surveying"));
+                courseList.add(new Course("INTRODUCTION TO Quantity Surveying", "Quantity Surveying",  "", "First Semester Examination 2020/2021 Session (FT)", "", "", "", "", "", "", "", ""));
             } else if (getDepartment.equals("Estate Management")) {
-                courseList.add(new Course("INTRODUCTION TO Estate Management", "Estate Management"));
+                courseList.add(new Course("INTRODUCTION TO Estate Management", "Estate Management",  "", "First Semester Examination 2020/2021 Session (FT)", "", "", "", "", "", "", "", ""));
             } else if (getDepartment.equals("Computer Science")) {
-                courseList.add(new Course("INTRODUCTION TO Computer Science", "Computer Science"));
+                courseList.add(new Course("INTRODUCTION TO Computer Science", "Computer Science",  "", "First Semester Examination 2020/2021 Session (FT)", "", "", "", "", "", "", "", ""));
             } else if (getDepartment.equals("Science Laboratory Technology")) {
-                courseList.add(new Course("INTRODUCTION TO Science Laboratory Technology", "Science Laboratory Technology"));
+                courseList.add(new Course("INTRODUCTION TO Science Laboratory Technology", "Science Laboratory Technology",  "", "First Semester Examination 2020/2021 Session (FT)", "", "", "", "", "", "", "", ""));
             } else if (getDepartment.equals("Accountancy")) {
-                courseList.add(new Course("INTRODUCTION TO Accountancy", "Accountancy"));
+                courseList.add(new Course("INTRODUCTION TO Accountancy", "Accountancy",  "", "First Semester Examination 2020/2021 Session (FT)", "", "", "", "", "", "", "", ""));
             } else if (getDepartment.equals("Business Administration")) {
-                courseList.add(new Course("Business Administration", "Business Administration"));
+                courseList.add(new Course("Business Administration", "Business Administration",  "", "First Semester Examination 2020/2021 Session (FT)", "", "", "", "", "", "", "", ""));
             }
         }
     }

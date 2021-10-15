@@ -45,6 +45,16 @@ public class CourseRecyclerViewAdapter extends RecyclerView.Adapter<CourseRecycl
                 Intent intent = new Intent(context, Single.class);
                 intent.putExtra("courseTitle", courseList.get(position).getCourseTitle());
                 intent.putExtra("courseCategory", courseList.get(position).getCategory());
+                intent.putExtra("school", courseList.get(position).getSchool());
+                intent.putExtra("session", courseList.get(position).getSession());
+                intent.putExtra("course_title", courseList.get(position).getCourseTitle());
+                intent.putExtra("class_", courseList.get(position).getClass_());
+                intent.putExtra("courseCode", courseList.get(position).getCourseCode());
+                intent.putExtra("courseUnit", courseList.get(position).getCourseUnit());
+                intent.putExtra("timeAllowed", courseList.get(position).getTimeAllowed());
+                intent.putExtra("instruction", courseList.get(position).getInstruction());
+                intent.putExtra("questionNumber", courseList.get(position).getQuestionNumber());
+                intent.putExtra("question", courseList.get(position).getQuestion());
 
                 context.startActivity(intent);
             }
