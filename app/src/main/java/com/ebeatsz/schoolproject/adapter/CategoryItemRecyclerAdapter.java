@@ -1,4 +1,4 @@
-package com.ebeatsz.schoolproject;
+package com.ebeatsz.schoolproject.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,6 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.ebeatsz.schoolproject.CourseScreen;
+import com.ebeatsz.schoolproject.R;
 import com.ebeatsz.schoolproject.model.CategoryItem;
 
 import java.util.List;

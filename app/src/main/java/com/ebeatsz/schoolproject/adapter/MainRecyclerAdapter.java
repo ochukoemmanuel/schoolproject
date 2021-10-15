@@ -1,4 +1,4 @@
-package com.ebeatsz.schoolproject;
+package com.ebeatsz.schoolproject.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.ebeatsz.schoolproject.R;
 import com.ebeatsz.schoolproject.model.AllCategory;
 import com.ebeatsz.schoolproject.model.CategoryItem;
 

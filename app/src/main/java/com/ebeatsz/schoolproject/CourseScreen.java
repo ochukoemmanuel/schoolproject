@@ -1,6 +1,5 @@
 package com.ebeatsz.schoolproject;
 
-import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.Menu;
@@ -15,11 +14,10 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.ebeatsz.schoolproject.model.AllCategory;
+import com.ebeatsz.schoolproject.adapter.CourseRecyclerViewAdapter;
 import com.ebeatsz.schoolproject.model.Course;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class CourseScreen extends AppCompatActivity {
 

@@ -5,13 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.WindowManager;
-import android.widget.Toast;
 
+import com.ebeatsz.schoolproject.adapter.MainRecyclerAdapter;
 import com.ebeatsz.schoolproject.model.AllCategory;
 import com.ebeatsz.schoolproject.model.CategoryItem;
 

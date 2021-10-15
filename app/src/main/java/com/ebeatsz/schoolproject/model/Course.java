@@ -5,6 +5,7 @@ public class Course {
     String courseTitle;
     String category;
 
+
     public Course(String courseTitle, String category) {
         this.courseTitle = courseTitle;
         this.category = category;
