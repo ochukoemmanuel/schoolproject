@@ -65,6 +65,9 @@ public class Single extends AppCompatActivity {
         courseCode.setText(getCourseCode);
         courseUnit.setText(getCourseUnit);
         timeAllowed.setText(getTimeAllowed);
+        instruction.setText(getInstruction);
+        questionNumber.setText(getQuestionNumber);
+        question.setText(getQuestion);
 
 
         view.setOnClickListener(new View.OnClickListener() {

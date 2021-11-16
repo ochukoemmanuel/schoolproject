@@ -37,6 +37,8 @@ public class MainRecyclerAdapter extends RecyclerView.Adapter<MainRecyclerAdapte
 //        holder.categoryTitle.setText(allCategoryList.get(position).getCategoryTitle());
         setCatItemRecycler(holder.itemRecycler, allCategoryList.get(position).getCategoryItemList());
         holder.itemView.setTag(allCategoryList.get(position));
+        holder.categoryTitle.setText(allCategoryList.get(position).getCategoryTitle());
+
     }
 
     @Override
@@ -52,7 +54,7 @@ public class MainRecyclerAdapter extends RecyclerView.Adapter<MainRecyclerAdapte
         public MainViewHolder(@NonNull View itemView) {
             super(itemView);
 
-//            categoryTitle = itemView.findViewById(R.id.categoryTitle);
+            categoryTitle = itemView.findViewById(R.id.categoryTitle);
             itemRecycler = itemView.findViewById(R.id.item_recycler);        }
     }
 

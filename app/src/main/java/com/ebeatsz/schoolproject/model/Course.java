@@ -15,6 +15,10 @@ public class Course {
     String questionNumber;
     String question;
 
+    public Course() {
+
+    }
+
 
     public Course(String courseTitle, String category, String school, String session, String course_title, String class_, String courseCode, String courseUnit, String timeAllowed, String instruction, String questionNumber, String question) {
         this.courseTitle = courseTitle;
@@ -127,21 +131,4 @@ public class Course {
         this.question = question;
     }
 
-    @Override
-    public String toString() {
-        return "Course{" +
-                "courseTitle='" + courseTitle + '\'' +
-                ", category='" + category + '\'' +
-                ", school='" + school + '\'' +
-                ", session='" + session + '\'' +
-                ", course_title='" + course_title + '\'' +
-                ", class_='" + class_ + '\'' +
-                ", courseCode='" + courseCode + '\'' +
-                ", courseUnit='" + courseUnit + '\'' +
-                ", timeAllowed='" + timeAllowed + '\'' +
-                ", instruction='" + instruction + '\'' +
-                ", questionNumber='" + questionNumber + '\'' +
-                ", question='" + question + '\'' +
-                '}';
-    }
 }

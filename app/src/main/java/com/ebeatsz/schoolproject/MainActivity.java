@@ -1,5 +1,6 @@
 package com.ebeatsz.schoolproject;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -13,6 +14,13 @@ import android.view.WindowManager;
 import com.ebeatsz.schoolproject.adapter.MainRecyclerAdapter;
 import com.ebeatsz.schoolproject.model.AllCategory;
 import com.ebeatsz.schoolproject.model.CategoryItem;
+import com.ebeatsz.schoolproject.model.Course;
+import com.ebeatsz.schoolproject.model.Question;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     List<CategoryItem> categoryItemList4;
     List<CategoryItem> categoryItemList;
     List<CategoryItem> categoryItemList2;
+
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override

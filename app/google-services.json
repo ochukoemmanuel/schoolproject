@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "983586039401",
+    "firebase_url": "https://rectemapp-default-rtdb.firebaseio.com",
+    "project_id": "rectemapp",
+    "storage_bucket": "rectemapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983586039401:android:a93d769275efcfcdaf24f8",
+        "android_client_info": {
+          "package_name": "com.ebeatsz.schoolproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "983586039401-tsbit1qf4dc3bvba1062p7nhoror6g0g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZypXnHTyp8ebfVUBB-Bcq-nix7CtM55I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "983586039401-tsbit1qf4dc3bvba1062p7nhoror6g0g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
