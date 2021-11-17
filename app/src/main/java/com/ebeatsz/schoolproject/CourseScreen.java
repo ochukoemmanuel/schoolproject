@@ -38,6 +38,7 @@ public class CourseScreen extends AppCompatActivity {
 
     DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("Quest");
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +47,7 @@ public class CourseScreen extends AppCompatActivity {
         setContentView(R.layout.activity_course_screen);
         titleName = findViewById(R.id.titleName);
         backView = findViewById(R.id.backView);
+
 
         String getDepartment = getIntent().getStringExtra("department");
         titleName.setText(getDepartment);
@@ -80,8 +82,20 @@ public class CourseScreen extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()){
+                    // To get value from firebase database
                     Course course = dataSnapshot.getValue(Course.class);
                     courseList.add(course);
+
+                    // To add value to firebase database
+                    Course addCourse = new Course("INTRODUCTION TO Engineering ",
+                            "Computer Engineering", "School of Science & Technology",
+                            "First Semester Examination 2020/2021 Session (FT)",
+                            "", "", "", "",
+                            "", "", "Question ",
+                            "A. What is computer engineering \n B. List two component of a computer");
+
+                    databaseReference.setValue(addCourse);
+
                     Toast.makeText(CourseScreen.this, "DB CONNECTED " , Toast.LENGTH_SHORT).show();
 
 

@@ -6,10 +6,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 
 import com.ebeatsz.schoolproject.adapter.MainRecyclerAdapter;
 import com.ebeatsz.schoolproject.model.AllCategory;
@@ -35,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
     List<CategoryItem> categoryItemList;
     List<CategoryItem> categoryItemList2;
 
+    Button btn;
+
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -43,6 +48,16 @@ public class MainActivity extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
+
+        btn = findViewById(R.id.btn_link);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SubmitQuestion.class);
+                startActivity(intent);
+            }
+        });
 
         // Category 3
         categoryItemList3 = new ArrayList<CategoryItem>();
